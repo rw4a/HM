@@ -39,7 +39,7 @@ function addInput (number){
 
     for ( i = 0; i<number ; i++){
         let newIn = document.createElement('input')
-        newIn.setAttribute("class","w-8 rounded-3xl p-2 px-3 text-center transform duration-1000 hover:scale-110")
+        newIn.setAttribute("class","w-16 rounded-3xl px-2 py-1 text-center transform duration-1000 hover:scale-110")
         newIn.setAttribute("id","in"+i)
         inContainer.appendChild(newIn)
         console.log((i+1) +" is Done")
