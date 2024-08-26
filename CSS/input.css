@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-head{
+
+    background-color: #F7EED3;
+}
+
+.bg-human{
+    background-color: #AAB396;
+}
+.bg-input{
+    background-color: #BC9F8B;
+}
+.bg-answer{
+    background-color: #DFD3C3;
+}
+.bg-body{
+    background-color: #FFF8E8;
+}

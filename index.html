@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HanggedMan</title>
+    <link href="./CSS/output.css" rel="stylesheet">
+</head>
+<body>
+    <div class=" p-3 flex justify-center rounded-b-full bg-head">
+        <h1 class="font-bold text-xl font-serif ">الرجل المشنوق</h1>
+    </div>
+
+    <div class="px-16 py-9 hidden" id="Human">
+        <div class="bg-human p-5 rounded-3xl">
+            <div class="text-2xl flex flex-wrap justify-center gap-4">
+                <div class="flex justify-center p-4 bg-white rounded-full transform duration-1000 hover:scale-125" id="head">
+                    <img src="./assets/head.png" class="w-12 h-12">
+                </div>
+                <div class="flex justify-center p-3 bg-white rounded-full transform duration-1000 hover:scale-125" id="arm">
+                    <div>
+                        <img src="./assets/arm.png" class="w-14 h-14">
+                    </div>
+                    <div >
+                        <h1 id="narm">2</h1>
+                    </div>
+                </div>
+                <div class="flex justify-center p-3 bg-white rounded-full transform duration-1000 hover:scale-125" id="body">
+                    <img src="./assets/human-body.png" class="w-14 h-14">
+                </div>
+                <div class="flex justify-center p-3 bg-white rounded-full transform duration-1000 hover:scale-125" id="leg">
+                    <div>
+                        <img src="./assets/leg.png" class="w-12 h-12">
+                    </div>
+                    <div>
+                        <h1 id="nleg">2</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="px-16 py-9" id="inCont">
+        <div class="bg-input p-4 rounded-3xl">
+            <div class="flex flex-col justify-center gap-8">
+                <div class="text-2xl flex justify-center">
+                    <h1>للبدأ</h1>
+                </div>
+                <div class="flex flex-wrap justify-center gap-2">
+                    
+                    <h1 class="text-lg">أدخل كلمتك: </h1>
+                    <input id="in" type="text" class="rounded-lg w-1/2 text-center">
+                </div>
+                <div class="text-lg flex justify-center">
+                    <button id="submit"  class="bg-white rounded-3xl p-2 transform duration-1000 hover:scale-125"> تأكيد</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="px-16 py-9 hidden" id="guessingCont">
+        <div class="bg-answer p-4 rounded-3xl">
+            <div class="flex flex-col justify-center gap-8">
+                <div class="text-2xl flex justify-center">
+                    <h1>خمن الكلمة</h1>
+                </div>
+                <div class="flex flex-wrap justify-center gap-4 " id="guess">
+                    
+                </div>
+                <div class="flex justify-center">
+                    <h1 id="tout" class="hidden">إعادة بعد 3 ثواني...</h1>
+                </div>
+                <div class="flex justify-center">
+                    <button id="submit2"  class="bg-white rounded-3xl p-2 transform duration-1000 hover:scale-125"> ارسال</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="./JS/script.js"></script>
+</body>
+</html>
